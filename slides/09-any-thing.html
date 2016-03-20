@@ -1,0 +1,22 @@
+<h2>9. The <code>any</code> thing</h2>
+<p><code>any</code>-type can provide flexibility</p>
+<pre class="fragment"><code class="lang-typescript">// MutantRunResultMatcher.ts
+import Mutant from './Mutant';
+
+export default class MutantRunResultMatcher {
+  constructor(mutants: Mutant[], results: RunResult[]) { }
+  // some realy complex stuff
+}
+</code></pre>
+<pre class="fragment"><code class="lang-typescript">// MutantRunResultMatcherSpec.ts
+import Mutant from './Mutant';
+import MutantRunResultMatcher from './MutantRunResultMatcher';
+describe('MutantRunResultMatcher', () => {
+  let mutants: <strong>any</strong>[]; // Flexibility
+  let results: <strong>any</strong>[];
+
+  beforeEach(() => {
+    mutants = [];
+    results = [];
+    sut = new MutantRunResultMatcher(mutants, runResultsByTestId);
+  });</code></pre>

@@ -1,0 +1,14 @@
+.zoom {
+    transform-origin: 20% 80%;
+    transition: transform 0.5s linear;
+}
+
+.zoom-in {
+    transform: scale(4);
+}
+
+.zoom-container{
+    height: 500px;
+    overflow: hidden;
+    position: relative; 
+}

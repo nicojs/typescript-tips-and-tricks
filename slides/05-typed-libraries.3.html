@@ -1,0 +1,17 @@
+<h2>5. typed libraries</h2>
+<div>
+    <h3>Alternative option</h3>
+    <pre><code class="lang-javascript">// Library package.json
+{
+    <span class="fragment fade-out" data-fragment-index="1">"main": "./lib/foo.js",
+    "typings": "./lib/foo.d.ts"</span>
+    <span class="fragment" data-fragment-index="1">"main": "./foo.js"</span>
+}    </code></pre>
+    <pre class="fragment"><code class="lang-bash"># move files to root of your module
+$ ls node_modules/foo
+foo.d.ts  foo.js  foo.ts</code></pre>
+    <pre class="fragment"><code class="lang-javascript">// Consumer
+import * as foo from 'foo/foo';
+
+foo.bar();// use the library    </code></pre>
+</div>

@@ -1,0 +1,15 @@
+<h2>5. typed libraries</h2>
+<div>
+    <h3>Consumer</h3>
+    <pre><code class="lang-javascript">// tsconfig.json
+{
+    "compilerOptions": {
+        <strong class="fragment">"moduleResolution": "node",</strong>
+        // ...
+     }
+}</code></pre>
+    <pre class="fragment"><code class="lang-typescript">// file.ts
+import * as foo from 'foo';
+
+foo.bar();// use the library</code></pre>
+</div>

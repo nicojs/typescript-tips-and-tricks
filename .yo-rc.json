@@ -1,0 +1,9 @@
+{
+  "generator-reveal-infosupport": {
+    "presentationTitle": "Top 10 tips and tricks for TypeScript",
+    "packageVersion": "0.0.0",
+    "deployToGithubPages": true,
+    "githubUsername": "nicojs",
+    "githubRepository": "typescript-10-tips-and-tricks"
+  }
+}
