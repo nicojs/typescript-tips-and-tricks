@@ -1,0 +1,26 @@
+{
+  "name": "reveal.js-theme-infosupport",
+  "authors": [
+    "Manuel Riezebosch <mriezebosch@gmail.com>"
+  ],
+  "description": "reveal.js theme for infosupport b.v.",
+  "main": "infosupport.css",
+  "moduleType": [],
+  "keywords": [
+    "reveal",
+    "infosupport"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/riezebosch/reveal.js-theme-infosupport",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "*.scss",
+    "Gruntfile.js"
+  ],
+  "dependencies": {
+    "reveal.js": "~3.2.0"
+  }
+}

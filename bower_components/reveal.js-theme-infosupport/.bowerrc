@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "postinstall": "sed -i -- 's/href=\".*\" id=\"theme\"/href=\"infosupport.css\" id=\"theme\"/g' ../../templates/_index.html"
+    }
+}
