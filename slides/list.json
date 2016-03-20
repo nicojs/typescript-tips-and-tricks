@@ -1,6 +1,13 @@
 [
     "index.md",
-    "1-use-source-maps.html",
-    "2-tsconfig-json.html",
-    "3-choose-a-module-strategy.html"
+    "01-use-source-maps.html",
+    "02-tsconfig-json.html",
+    "03-integrate-in-your-build.html",
+    "04-choose-a-module-strategy.html",
+    ["05-typed-libraries.html", "05-typed-libraries.2.html", "05-typed-libraries.3.html"],
+    "06-unit-tests-before-migrating.html",
+    "07-fault-tolerance.html",
+    "08-configuration.html",
+    "09-any-thing.html",
+    "10-teamwork.html"
 ]

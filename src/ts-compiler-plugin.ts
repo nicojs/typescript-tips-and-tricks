@@ -40,8 +40,17 @@ namespace tipsAndTricks {
                     moduleName = 'CommonJS';
                 }
             }
+            
+            let targetName = options['target'];
+            if(targetName){
+                targetName = targetName.toUpperCase();
+                if(targetName === 'LATEST'){
+                    targetName = 'Latest';
+                }
+            }
 
             options['module'] = ts.ModuleKind[moduleName];
+            options['target'] = ts.ScriptTarget[targetName];
             return options;
         }
 

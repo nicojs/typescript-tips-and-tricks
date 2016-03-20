@@ -1,11 +1,18 @@
-<h2>3. choose a module strategy</h2>
+<h2>4. choose a module strategy</h2>
 
 <div class="typescript-plugin">
 
     <div class="row">
         <div class="column-2">
             <pre><code class="source lang-typescript" contenteditable="true">import * as _ from 'lodash'; 
-_.chunk(['a', 'b', 'c', 'd'], 2);</code></pre>
+export class ArrayWrapper&lt;T&gt; {
+    constructor(private arr: T[]){
+    }
+    
+    last(){
+        return _.last(this.arr);
+    }
+}</code></pre>
         </div>
         <div class="column-2">
             <pre><code class="source-options lang-json" contenteditable="true">{

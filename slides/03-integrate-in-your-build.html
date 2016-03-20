@@ -1,0 +1,45 @@
+<h2>3. Integrate in your build</h2>
+<div class="row">
+    <div class="column-2">
+        <pre><code class="lang-javascript">// Grunt
+module.exports = function (grunt) {
+  grunt.initConfig({
+    ts: {
+      build: {
+        tsconfig: true
+      }
+  }
+}</code></pre>
+    </div>
+    <div class="fragment column-2">
+        <pre><code class="lang-javascript">// Gulp
+var ts = require('gulp-typescript');
+ 
+gulp.task('default', function () {
+    return gulp.src('src/**/*.ts')
+      .pipe(ts())
+      .pipe(gulp.dest('dist'));
+
+});
+</code></pre>
+    </div>
+</div>
+<div class="row">
+    <div class="fragment column-2">
+        <pre><code class="lang-javascript">// Package.json
+{
+    "scripts": {
+        "start": "tsc"
+    }
+}
+</code></pre>
+    </div>
+    <div class="fragment column-2">
+        <pre><code class="lang-powershell"># MSBuild
+PM> Install-Package 
+  Microsoft.TypeScript.MSBuild
+  &nbsp;
+  &nbsp;
+        </code></pre>
+    </div>
+</div>

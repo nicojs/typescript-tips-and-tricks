@@ -13,7 +13,10 @@ module.exports = (grunt) ->
                     'index.html'
                     'slides/{,*/}*.{md,html}'
                     'js/*.js'
-                    'resources/**'
+                    'resources/**',
+                    'dist/**/*.js',
+                    'css/*.css',
+                    'templates/*.html'
                 ]
 
             index:
