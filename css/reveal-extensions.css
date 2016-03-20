@@ -9,7 +9,7 @@
 }
 
 body{
-    background-image: url('/resources/ts-city-small.png');
+    background-image: url('../resources/ts-city-small.png');
     background-repeat: no-repeat;
     background-position: bottom right;
 }
