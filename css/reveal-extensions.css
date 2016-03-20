@@ -1,0 +1,9 @@
+.row{
+    overflow: hidden;
+}
+.column-2{
+    float:left; width: 50%;
+}
+.column-1{
+    width: 100%;
+}

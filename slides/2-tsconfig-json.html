@@ -1,0 +1,19 @@
+<h2>2. use <code>tsconfig.json</code></h2>
+<pre><code class="lang-bash">
+    tsc --init
+</code></pre>
+<pre><code class="lang-javascript">
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "outDir": "dist"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
+    
+</code></pre>
