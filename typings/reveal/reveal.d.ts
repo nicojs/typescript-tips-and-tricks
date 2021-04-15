@@ -1,12 +1,17 @@
-// Type definitions for Reveal 1.3.0
+// Type definitions for Reveal 4.1
 // Project: https://github.com/hakimel/reveal.js/
 // Definitions by: grapswiz <https://github.com/grapswiz/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-declare var Reveal:RevealStatic;
+declare const Reveal: RevealStatic;
+
+// Reveal plugins are globals since 4.0
+declare const RevealMarkdown: any;
+declare const RevealHighlight: any;
+declare const RevealNotes: any;
 
 interface RevealStatic {
-    initialize:(config:RevealOptions)=>void;
+    initialize:(config:RevealOptions)=>Promise<any>;
     configure:(diff:RevealOptions)=>void;
 
     // Navigation
@@ -26,6 +31,7 @@ interface RevealStatic {
     getCurrentSlide():Element;
 
     getIndices(slide?:Element):{h:number; v:number;};
+	availableFragments(): { next: any };
 
     // States
     addEventListener(type:string, listener:Function, useCapture?:boolean):void;
@@ -53,6 +59,7 @@ interface RevealOptions {
     history?:boolean;
     keyboard?:boolean;
     overview?:boolean;
+	fragments?: boolean;
     center?:boolean;
     touch?:boolean; // undocumented.
     loop?:boolean;
@@ -62,6 +69,7 @@ interface RevealOptions {
     rollingLinks?:boolean;
     theme?:string;
     transition?:string;
+	plugins?: any[];
 
     // Presentation Size
     width?:number;
